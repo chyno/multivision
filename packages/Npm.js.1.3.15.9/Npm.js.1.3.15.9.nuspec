@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Npm.js</id>
+    <version>1.3.15.9</version>
+    <title>Npm.js</title>
+    <authors>Isaacs</authors>
+    <owners>Isaacs</owners>
+    <licenseUrl>https://raw.github.com/isaacs/npm/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/giggio/npm-nuget</projectUrl>
+    <iconUrl>https://raw.github.com/isaacs/npm/master/html/npm-256-square.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>a package manager for node.
+https://npmjs.org/</description>
+    <copyright>Copyright (c) Isaac Z. Schlueter</copyright>
+    <tags>node nodejs npm</tags>
+    <dependencies>
+      <dependency id="Node.js" version="0.10.21" />
+    </dependencies>
+  </metadata>
+</package>

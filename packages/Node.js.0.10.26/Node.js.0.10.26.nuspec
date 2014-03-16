@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Node.js</id>
+    <version>0.10.26</version>
+    <title>Node.js</title>
+    <authors>Joyent, Inc.</authors>
+    <owners>Joyent, Inc.</owners>
+    <licenseUrl>https://raw.github.com/joyent/node/v0.10.26/LICENSE</licenseUrl>
+    <projectUrl>http://nodejs.org/</projectUrl>
+    <iconUrl>https://bitpay.com/img/js64.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
+
+Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</description>
+    <releaseNotes>- uv: Upgrade to v0.10.25 (Timothy J Fontaine)
+- npm: upgrade to 1.4.3 (isaacs)
+- v8: support compiling with VS2013 (Fedor Indutny)
+- cares: backport TXT parsing fix (Fedor Indutny)
+- crypto: throw on SignFinal failure (Fedor Indutny)
+- crypto: update root certificates (Ben Noordhuis)
+- debugger: Fix breakpoint not showing after restart (Farid Neshat)
+- fs: make unwatchFile() insensitive to path (iamdoron)
+- net: do not re-emit stream errors (Fedor Indutny)
+- net: make Socket destroy() re-entrance safe (Jun Ma)
+- net: reset `endEmitted` on reconnect (Fedor Indutny)
+- node: do not close stdio implicitly (Fedor Indutny)
+- zlib: avoid assertion in close (Fedor Indutny)</releaseNotes>
+    <copyright>© 2014 Joyent, Inc.</copyright>
+    <tags>nodejs exe javascript runtime server</tags>
+  </metadata>
+</package>

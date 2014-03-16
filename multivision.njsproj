@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03f3c923-40ee-433b-9f60-19228182ed95}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>server.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include=".bowerrc" />
+    <Content Include="server\views\index.jade" />
+    <Content Include="package.json" />
+    <Compile Include="public\vendor\angular-resource\angular-resource.js" />
+    <Compile Include="public\vendor\angular-resource\angular-resource.min.js" />
+    <Compile Include="public\vendor\angular-route\angular-route.js" />
+    <Compile Include="public\vendor\angular-route\angular-route.min.js" />
+    <Compile Include="public\vendor\angular\angular.js" />
+    <Compile Include="public\vendor\angular\angular.min.js" />
+    <Compile Include="public\vendor\jquery\dist\jquery.js" />
+    <Compile Include="public\vendor\jquery\dist\jquery.min.js" />
+    <Compile Include="public\vendor\jquery\src\ajax.js" />
+    <Compile Include="public\vendor\jquery\src\ajax\jsonp.js" />
+    <Compile Include="public\vendor\jquery\src\ajax\load.js" />
+    <Compile Include="public\vendor\jquery\src\ajax\parseJSON.js" />
+    <Compile Include="public\vendor\jquery\src\ajax\parseXML.js" />
+    <Compile Include="public\vendor\jquery\src\ajax\script.js" />
+    <Compile Include="public\vendor\jquery\src\ajax\var\nonce.js" />
+    <Compile Include="public\vendor\jquery\src\ajax\var\rquery.js" />
+    <Compile Include="public\vendor\jquery\src\ajax\xhr.js" />
+    <Compile Include="public\vendor\jquery\src\attributes.js" />
+    <Compile Include="public\vendor\jquery\src\attributes\attr.js" />
+    <Compile Include="public\vendor\jquery\src\attributes\classes.js" />
+    <Compile Include="public\vendor\jquery\src\attributes\prop.js" />
+    <Compile Include="public\vendor\jquery\src\attributes\support.js" />
+    <Compile Include="public\vendor\jquery\src\attributes\val.js" />
+    <Compile Include="public\vendor\jquery\src\callbacks.js" />
+    <Compile Include="public\vendor\jquery\src\core.js" />
+    <Compile Include="public\vendor\jquery\src\core\access.js" />
+    <Compile Include="public\vendor\jquery\src\core\init.js" />
+    <Compile Include="public\vendor\jquery\src\core\parseHTML.js" />
+    <Compile Include="public\vendor\jquery\src\core\ready.js" />
+    <Compile Include="public\vendor\jquery\src\core\var\rsingleTag.js" />
+    <Compile Include="public\vendor\jquery\src\css.js" />
+    <Compile Include="public\vendor\jquery\src\css\addGetHookIf.js" />
+    <Compile Include="public\vendor\jquery\src\css\curCSS.js" />
+    <Compile Include="public\vendor\jquery\src\css\defaultDisplay.js" />
+    <Compile Include="public\vendor\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Compile Include="public\vendor\jquery\src\css\support.js" />
+    <Compile Include="public\vendor\jquery\src\css\swap.js" />
+    <Compile Include="public\vendor\jquery\src\css\var\cssExpand.js" />
+    <Compile Include="public\vendor\jquery\src\css\var\getStyles.js" />
+    <Compile Include="public\vendor\jquery\src\css\var\isHidden.js" />
+    <Compile Include="public\vendor\jquery\src\css\var\rmargin.js" />
+    <Compile Include="public\vendor\jquery\src\css\var\rnumnonpx.js" />
+    <Compile Include="public\vendor\jquery\src\data.js" />
+    <Compile Include="public\vendor\jquery\src\data\accepts.js" />
+    <Compile Include="public\vendor\jquery\src\data\Data.js" />
+    <Compile Include="public\vendor\jquery\src\data\var\data_priv.js" />
+    <Compile Include="public\vendor\jquery\src\data\var\data_user.js" />
+    <Compile Include="public\vendor\jquery\src\deferred.js" />
+    <Compile Include="public\vendor\jquery\src\deprecated.js" />
+    <Compile Include="public\vendor\jquery\src\dimensions.js" />
+    <Compile Include="public\vendor\jquery\src\effects.js" />
+    <Compile Include="public\vendor\jquery\src\effects\animatedSelector.js" />
+    <Compile Include="public\vendor\jquery\src\effects\Tween.js" />
+    <Compile Include="public\vendor\jquery\src\event.js" />
+    <Compile Include="public\vendor\jquery\src\event\alias.js" />
+    <Compile Include="public\vendor\jquery\src\event\support.js" />
+    <Compile Include="public\vendor\jquery\src\exports\amd.js" />
+    <Compile Include="public\vendor\jquery\src\exports\global.js" />
+    <Compile Include="public\vendor\jquery\src\intro.js" />
+    <Compile Include="public\vendor\jquery\src\jquery.js" />
+    <Compile Include="public\vendor\jquery\src\manipulation.js" />
+    <Compile Include="public\vendor\jquery\src\manipulation\support.js" />
+    <Compile Include="public\vendor\jquery\src\manipulation\var\rcheckableType.js" />
+    <Compile Include="public\vendor\jquery\src\manipulation\_evalUrl.js" />
+    <Compile Include="public\vendor\jquery\src\offset.js" />
+    <Compile Include="public\vendor\jquery\src\outro.js" />
+    <Compile Include="public\vendor\jquery\src\queue.js" />
+    <Compile Include="public\vendor\jquery\src\queue\delay.js" />
+    <Compile Include="public\vendor\jquery\src\selector-native.js" />
+    <Compile Include="public\vendor\jquery\src\selector-sizzle.js" />
+    <Compile Include="public\vendor\jquery\src\selector.js" />
+    <Compile Include="public\vendor\jquery\src\serialize.js" />
+    <Compile Include="public\vendor\jquery\src\sizzle\dist\sizzle.js" />
+    <Compile Include="public\vendor\jquery\src\sizzle\dist\sizzle.min.js" />
+    <Compile Include="public\vendor\jquery\src\traversing.js" />
+    <Compile Include="public\vendor\jquery\src\traversing\findFilter.js" />
+    <Compile Include="public\vendor\jquery\src\traversing\var\rneedsContext.js" />
+    <Compile Include="public\vendor\jquery\src\var\arr.js" />
+    <Compile Include="public\vendor\jquery\src\var\class2type.js" />
+    <Compile Include="public\vendor\jquery\src\var\concat.js" />
+    <Compile Include="public\vendor\jquery\src\var\hasOwn.js" />
+    <Compile Include="public\vendor\jquery\src\var\indexOf.js" />
+    <Compile Include="public\vendor\jquery\src\var\pnum.js" />
+    <Compile Include="public\vendor\jquery\src\var\push.js" />
+    <Compile Include="public\vendor\jquery\src\var\rnotwhite.js" />
+    <Compile Include="public\vendor\jquery\src\var\slice.js" />
+    <Compile Include="public\vendor\jquery\src\var\strundefined.js" />
+    <Compile Include="public\vendor\jquery\src\var\support.js" />
+    <Compile Include="public\vendor\jquery\src\var\toString.js" />
+    <Compile Include="public\vendor\jquery\src\var\trim.js" />
+    <Compile Include="public\vendor\jquery\src\wrap.js" />
+    <Compile Include="public\vendor\toastr\toastr.js" />
+    <Compile Include="public\vendor\toastr\toastr.min.js" />
+    <Compile Include="server.js" />
+    <Content Include="public\vendor\angular-resource\.bower.json" />
+    <Content Include="public\vendor\angular-resource\angular-resource.min.js.map" />
+    <Content Include="public\vendor\angular-resource\bower.json" />
+    <Content Include="public\vendor\angular-resource\README.md" />
+    <Content Include="public\vendor\angular-route\.bower.json" />
+    <Content Include="public\vendor\angular-route\angular-route.min.js.map" />
+    <Content Include="public\vendor\angular-route\bower.json" />
+    <Content Include="public\vendor\angular-route\README.md" />
+    <Content Include="public\vendor\angular\.bower.json" />
+    <Content Include="public\vendor\angular\angular-csp.css" />
+    <Content Include="public\vendor\angular\angular.min.js.gzip" />
+    <Content Include="public\vendor\angular\angular.min.js.map" />
+    <Content Include="public\vendor\angular\bower.json" />
+    <Content Include="public\vendor\angular\README.md" />
+    <Content Include="public\vendor\jquery\.bower.json" />
+    <Content Include="public\vendor\jquery\bower.json" />
+    <Content Include="public\vendor\jquery\dist\jquery.min.map" />
+    <Content Include="public\vendor\jquery\MIT-LICENSE.txt" />
+    <Content Include="public\vendor\jquery\src\sizzle\dist\sizzle.min.map" />
+    <Content Include="public\vendor\toastr\.bower.json" />
+    <Content Include="public\vendor\toastr\bower.json" />
+    <Content Include="public\vendor\toastr\toastr.css" />
+    <Content Include="public\vendor\toastr\toastr.min.css" />
+    <Content Include="public\vendor\toastr\toastr.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\vendor\" />
+    <Folder Include="public\vendor\angular-resource\" />
+    <Folder Include="public\vendor\angular-route\" />
+    <Folder Include="public\vendor\angular\" />
+    <Folder Include="public\vendor\jquery\" />
+    <Folder Include="public\vendor\jquery\dist\" />
+    <Folder Include="public\vendor\jquery\src\" />
+    <Folder Include="public\vendor\jquery\src\ajax\" />
+    <Folder Include="public\vendor\jquery\src\ajax\var\" />
+    <Folder Include="public\vendor\jquery\src\attributes\" />
+    <Folder Include="public\vendor\jquery\src\core\" />
+    <Folder Include="public\vendor\jquery\src\core\var\" />
+    <Folder Include="public\vendor\jquery\src\css\" />
+    <Folder Include="public\vendor\jquery\src\css\var\" />
+    <Folder Include="public\vendor\jquery\src\data\" />
+    <Folder Include="public\vendor\jquery\src\data\var\" />
+    <Folder Include="public\vendor\jquery\src\effects\" />
+    <Folder Include="public\vendor\jquery\src\event\" />
+    <Folder Include="public\vendor\jquery\src\exports\" />
+    <Folder Include="public\vendor\jquery\src\manipulation\" />
+    <Folder Include="public\vendor\jquery\src\manipulation\var\" />
+    <Folder Include="public\vendor\jquery\src\queue\" />
+    <Folder Include="public\vendor\jquery\src\sizzle\" />
+    <Folder Include="public\vendor\jquery\src\sizzle\dist\" />
+    <Folder Include="public\vendor\jquery\src\traversing\" />
+    <Folder Include="public\vendor\jquery\src\traversing\var\" />
+    <Folder Include="public\vendor\jquery\src\var\" />
+    <Folder Include="public\vendor\toastr\" />
+    <Folder Include="server\" />
+    <Folder Include="server\views\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
