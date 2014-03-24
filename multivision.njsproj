@@ -17,6 +17,9 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
     <Content Include=".bowerrc" />
+    <Content Include="public\css\site.styl" />
+    <Content Include="server\includes\layout.jade" />
+    <Content Include="server\includes\scripts.jade" />
     <Content Include="server\views\index.jade" />
     <Content Include="package.json" />
     <Compile Include="public\vendor\angular-resource\angular-resource.js" />
@@ -140,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
+    <Folder Include="public\css\" />
     <Folder Include="public\vendor\" />
     <Folder Include="public\vendor\angular-resource\" />
     <Folder Include="public\vendor\angular-route\" />
@@ -169,6 +173,7 @@
     <Folder Include="public\vendor\jquery\src\var\" />
     <Folder Include="public\vendor\toastr\" />
     <Folder Include="server\" />
+    <Folder Include="server\includes\" />
     <Folder Include="server\views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
