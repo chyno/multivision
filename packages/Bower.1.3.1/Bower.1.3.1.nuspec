@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Bower</id>
+    <version>1.3.1</version>
+    <authors>Twitter</authors>
+    <owners>Twitter</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>http://bower.io/</projectUrl>
+    <iconUrl>https://pbs.twimg.com/profile_images/3536632979/66db62603f426a8fc6664081811be6d4_normal.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Bower is a package manager for the web. It offers a generic, unopinionated solution to the problem of front-end package management, while exposing the package dependency model via an API that can be consumed by a more opinionated build stack. There are no system wide dependencies, no dependencies are shared between different apps, and the dependency tree is flat.
+
+Bower runs over Git, and is package-agnostic. A packaged component can be made up of any type of asset, and use any type of transport (e.g., AMD, CommonJS, etc.).
+
+-- Bundle Features --
+This bundle works without Node.js and Git installations, so you can use js-restore on any build server (including cloud TFS) and don't commit external js files.</description>
+    <releaseNotes>- Removed support for node 0.8. It may still work but we will no longer fix bugs for older versions of node.
+- Add Bower Insight for opt-in analytics integration to help improve tool and gain insight on community trends
+- Add moduleType property to bower init (#934)
+- Fix prune command to log only after cleanup is completed (#1023)
+- Fix git resolver to ignore pre-release versions (#1017)
+- Fix shorthand flag for save option on uninstall command (#1031)
+- Add bower version command (#961)
+- Add .bowerrc option to use --save by default when using bower install command (#1074)
+- Fix git resolver caching (#1083)
+- Fix reading versions from cache directory (#1076)
+- Add svn support (#1055)
+- Allow circular dependencies to be installed (#1104)
+- Add scripts/hooks support (#718)
+------------------------------------------------------
+Bundle changes:
+- Single .bin dir support
+- Jsgit hacks replaced by nogit dependency (clean bower codebase)</releaseNotes>
+    <copyright>© 2014 Twitter and other contributors</copyright>
+    <tags>package manager javascript front-end git</tags>
+    <dependencies>
+      <dependency id="Node.js" version="0.10.26.1" />
+      <dependency id="NoGit" version="0.0.5" />
+    </dependencies>
+  </metadata>
+</package>

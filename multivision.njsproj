@@ -17,7 +17,10 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
     <Content Include=".bowerrc" />
+    <Content Include="public\css\bootstrap.css" />
+    <Content Include="public\css\site.css" />
     <Content Include="public\css\site.styl" />
+    <Content Include="public\favicon.ico" />
     <Content Include="server\includes\layout.jade" />
     <Content Include="server\includes\scripts.jade" />
     <Content Include="server\views\index.jade" />
@@ -140,6 +143,7 @@
     <Content Include="public\vendor\toastr\toastr.css" />
     <Content Include="public\vendor\toastr\toastr.min.css" />
     <Content Include="public\vendor\toastr\toastr.min.js.map" />
+    <Content Include="server\views\partials\main.jade" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
@@ -175,6 +179,7 @@
     <Folder Include="server\" />
     <Folder Include="server\includes\" />
     <Folder Include="server\views\" />
+    <Folder Include="server\views\partials\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
