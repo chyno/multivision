@@ -146,6 +146,7 @@
     <Content Include="public\vendor\toastr\toastr.min.js.map" />
     <Content Include="server\views\partials\featured-courses.jade" />
     <Content Include="server\views\partials\main.jade" />
+    <Content Include="server\views\partials\navbar-login.jade" />
     <Content Include="server\views\partials\new-courses.jade" />
   </ItemGroup>
   <ItemGroup>
