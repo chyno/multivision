@@ -18,13 +18,14 @@
   <ItemGroup>
     <Content Include=".bowerrc" />
     <Content Include="public\css\bootstrap.css" />
-    <Content Include="public\css\site.css" />
     <Content Include="public\css\site.styl" />
     <Content Include="public\favicon.ico" />
     <Content Include="server\includes\layout.jade" />
     <Content Include="server\includes\scripts.jade" />
     <Content Include="server\views\index.jade" />
     <Content Include="package.json" />
+    <Compile Include="public\app\app.js" />
+    <Compile Include="public\app\main\mvMainCtrl.js" />
     <Compile Include="public\vendor\angular-resource\angular-resource.js" />
     <Compile Include="public\vendor\angular-resource\angular-resource.min.js" />
     <Compile Include="public\vendor\angular-route\angular-route.js" />
@@ -147,7 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
+    <Folder Include="public\app\main\" />
     <Folder Include="public\css\" />
+    <Folder Include="public\app\" />
     <Folder Include="public\vendor\" />
     <Folder Include="public\vendor\angular-resource\" />
     <Folder Include="public\vendor\angular-route\" />
