@@ -144,10 +144,10 @@
     <Content Include="public\vendor\toastr\toastr.css" />
     <Content Include="public\vendor\toastr\toastr.min.css" />
     <Content Include="public\vendor\toastr\toastr.min.js.map" />
-    <Content Include="server\views\partials\featured-courses.jade" />
-    <Content Include="server\views\partials\main.jade" />
-    <Content Include="server\views\partials\navbar-login.jade" />
-    <Content Include="server\views\partials\new-courses.jade" />
+    <Content Include="server\views\partials\main\featured-courses.jade" />
+    <Content Include="server\views\partials\main\main.jade" />
+    <Content Include="server\views\partials\account\navbar-login.jade" />
+    <Content Include="server\views\partials\main\new-courses.jade" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
@@ -186,6 +186,8 @@
     <Folder Include="server\includes\" />
     <Folder Include="server\views\" />
     <Folder Include="server\views\partials\" />
+    <Folder Include="server\views\partials\main\" />
+    <Folder Include="server\views\partials\account\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
