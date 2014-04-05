@@ -16,6 +16,10 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Compile Include="server\config\config.js" />
+    <Compile Include="server\config\express.js" />
+    <Compile Include="server\config\mongoose.js" />
+    <Compile Include="server\config\routes.js" />
     <Content Include=".bowerrc" />
     <Content Include="public\css\bootstrap.css" />
     <Content Include="public\css\site.styl" />
@@ -185,6 +189,7 @@
     <Folder Include="public\vendor\toastr\" />
     <Folder Include="server\" />
     <Folder Include="server\includes\" />
+    <Folder Include="server\config\" />
     <Folder Include="server\views\" />
     <Folder Include="public\app\account\" />
   </ItemGroup>
