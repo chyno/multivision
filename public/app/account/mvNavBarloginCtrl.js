@@ -3,7 +3,7 @@
         
          $http.post('/login', { username: username, password: password }).then(function(response) {
             console.log('button post');
-            if (response.data.sucesss) {
+            if (response.data.success) {
                 console.log('logged in!');
             } else {
                console.log('failed to log in');
