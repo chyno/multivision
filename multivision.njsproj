@@ -16,6 +16,8 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Compile Include="public\app\account\mvIdentity.js" />
+    <Compile Include="public\app\common\mvNotifier.js" />
     <Compile Include="server\config\config.js" />
     <Compile Include="server\config\express.js" />
     <Compile Include="server\config\mongoose.js" />
@@ -157,6 +159,7 @@
   <ItemGroup>
     <Folder Include="public\" />
     <Folder Include="public\app\main\" />
+    <Folder Include="public\app\common\" />
     <Folder Include="public\css\" />
     <Folder Include="public\app\" />
     <Folder Include="public\vendor\" />
