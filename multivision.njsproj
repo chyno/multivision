@@ -16,11 +16,15 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Compile Include="public\app\account\mvUser.js" />
+    <Compile Include="public\app\account\mvAuth.js" />
     <Compile Include="public\app\account\mvIdentity.js" />
     <Compile Include="public\app\common\mvNotifier.js" />
+    <Compile Include="server\config\auth.js" />
     <Compile Include="server\config\config.js" />
     <Compile Include="server\config\express.js" />
     <Compile Include="server\config\mongoose.js" />
+    <Compile Include="server\config\passport.js" />
     <Compile Include="server\config\routes.js" />
     <Content Include=".bowerrc" />
     <Content Include="public\css\bootstrap.css" />

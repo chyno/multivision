@@ -1,28 +1,23 @@
-﻿var passport = require('passport');
+﻿var auth = require('./auth'),
+  mongoose = require('mongoose'),
+  User = mongoose.model('User');
 
 module.exports = function(app) {
-    
-app.get('/partials/*', function(req, res) {
-  res.render('../../public/app/' + req.params);
-});
 
-app.post('/login', function(req, res, next) {
-    var auth = passport.authenticate('local', function(err, user) {
-        if (err) {
-            return next(err); }
-        if (!user) {
-            res.send({ success: false });}
-        req.logIn(user, function(err) {
-            if (err) {
-                return next(err);}
-            res.send({ success: true, user: user });
-        });
-        
+  app.get('/partials/*', function(req, res) {
+    res.render('../../public/app/' + req.params);
+  });
+
+  app.post('/login', auth.authenticate);
+
+  app.post('/logout', function(req, res) {
+    req.logout();
+    res.end();
+  });
+
+  app.get('*', function(req, res) {
+    res.render('index', {
+      bootstrappedUser: req.user
     });
-    auth(req, res, next);
-});
-app.get('*', function(req, res) {
-  res.render('index');
-});
-
+  });
 }
