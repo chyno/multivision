@@ -9,7 +9,7 @@
                     var user = new mvUser();
                     angular.extend(user, response.data.user);
                     mvIdentity.currentUser = user;
-                    mvIdentity.currentUser = response.data.user;
+                    
                     dfd.resolve(true);
 
                 } else {
