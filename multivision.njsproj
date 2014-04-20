@@ -19,6 +19,7 @@
     <Compile Include="public\app\account\mvUser.js" />
     <Compile Include="public\app\account\mvAuth.js" />
     <Compile Include="public\app\account\mvIdentity.js" />
+    <Compile Include="public\app\admin\mvUserListCtrl.js" />
     <Compile Include="public\app\common\mvNotifier.js" />
     <Compile Include="public\vendor\bootstrap\dist\js\bootstrap.js" />
     <Compile Include="public\vendor\bootstrap\dist\js\bootstrap.min.js" />
@@ -46,6 +47,7 @@
     <Compile Include="server\config\passport.js" />
     <Compile Include="server\config\routes.js" />
     <Content Include=".bowerrc" />
+    <Content Include="public\app\admin\user-list.jade" />
     <Content Include="public\css\bootstrap.css" />
     <Content Include="public\css\site.styl" />
     <Content Include="public\favicon.ico" />
@@ -249,6 +251,7 @@
     <Folder Include="public\" />
     <Folder Include="public\app\main\" />
     <Folder Include="public\app\common\" />
+    <Folder Include="public\app\admin\" />
     <Folder Include="public\css\" />
     <Folder Include="public\app\" />
     <Folder Include="public\vendor\" />
