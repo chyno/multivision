@@ -16,6 +16,8 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Compile Include=".nuget\karma.conf.js" />
+    <Compile Include="karma.conf.js" />
     <Compile Include="public\app\account\mvUser.js" />
     <Compile Include="public\app\account\mvAuth.js" />
     <Compile Include="public\app\account\mvIdentity.js" />
@@ -46,6 +48,7 @@
     <Compile Include="server\config\mongoose.js" />
     <Compile Include="server\config\passport.js" />
     <Compile Include="server\config\routes.js" />
+    <Compile Include="test\test-app.js" />
     <Content Include=".bowerrc" />
     <Content Include="public\app\admin\user-list.jade" />
     <Content Include="public\css\bootstrap.css" />
@@ -248,6 +251,7 @@
     <Content Include="public\app\main\new-courses.jade" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="test\" />
     <Folder Include="public\" />
     <Folder Include="public\app\main\" />
     <Folder Include="public\app\common\" />
