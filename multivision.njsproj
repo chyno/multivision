@@ -49,6 +49,7 @@
     <Compile Include="server\config\passport.js" />
     <Compile Include="server\config\routes.js" />
     <Compile Include="test\test-app.js" />
+    <Compile Include="test\tests\account\mvUserSpec.js" />
     <Content Include=".bowerrc" />
     <Content Include="public\app\admin\user-list.jade" />
     <Content Include="public\css\bootstrap.css" />
@@ -301,6 +302,8 @@
     <Folder Include="server\config\" />
     <Folder Include="server\views\" />
     <Folder Include="public\app\account\" />
+    <Folder Include="test\tests\" />
+    <Folder Include="test\tests\account\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />

@@ -1,0 +1,7 @@
+[32mINFO [karma]: [39mKarma v0.12.12 server started at http://localhost:9876/
+[32mINFO [launcher]: [39mStarting browser Chrome
+[32mINFO [Chrome 34.0.1847 (Windows)]: [39mConnected on socket eV2qDeiE_KpeKVjQ4K3E with id 86186339
+Chrome 34.0.1847 (Windows): Executed 0 of 2[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2KChrome 34.0.1847 (Windows): Executed 1 of 2[32m SUCCESS[39m (0 secs / 0.022 secs)
+[1A[2KChrome 34.0.1847 (Windows): Executed 2 of 2[32m SUCCESS[39m (0 secs / 0.026 secs)
+[1A[2KChrome 34.0.1847 (Windows): Executed 2 of 2[32m SUCCESS[39m (0.035 secs / 0.026 secs)

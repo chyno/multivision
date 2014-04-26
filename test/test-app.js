@@ -1,2 +1,2 @@
-﻿angular.module('app', ['ngResource', 'ngRoute']);
+﻿ angular.module('app', ['ngResource']);
 var toastr = {};
